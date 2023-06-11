@@ -218,11 +218,10 @@
   @media (max-width: 600px) {
     body {
       background-size: contain;
-        
-        
-        
-        
-        #social-media, #categories {
+    }
+  }
+
+  #social-media, #categories {
     background-color: #d8c4c4;
     padding: 20px;
     margin-top: 20px;
@@ -331,4 +330,22 @@
   color: #ff0000;
 }
 
-  
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.user-profile span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.hidden {
+  display: none;
+}
