@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Clothing Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* CSS styles specific to this page */
+     #contact-details {
+      margin-top: 20px;
+    }
+    
+    body {
+      background-image: url('jpg.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    /* CSS styles for signup form */
+
+/* CSS styles for signup form */
+
+/* CSS styles for signup form */
+
+#signup {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: hsl(195, 35%, 81%);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#signup h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#signup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+#signup input[type="text"],
+#signup input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+#signup input[type="text"]:focus,
+#signup input[type="email"]:focus {
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#signup button[type="submit"] {
+  background-color: #4CAF50;
+  color: rgb(120, 178, 217);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#signup button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Navigation bar content -->
+    <nav>
+      <div class="container">
+        <h1>Your Clothing Store</h1>
+        <ul>
+          <li><a  href="Indec.html" class="btn">Home </a></li>
+          <li><button href="#" class="btn">Shop</button></li>
+          <li><button id="about-button" onclick="displayAboutDetails()" class="btn">About</button></li>
+          <li><button id="contact-button" onclick="displayContactDetails()" class="btn">Contact</button></li>
+        </ul>
+      </div>
+    </nav>
+    
+  </header>
+
+  <section id="hero">
+    <!-- Hero section content -->
+    <div class="container">
+      <h2>Welcome to Your Clothing Store</h2>
+      <p>Discover the latest fashion trends and shop with style.</p>
+      <p class="running-text" onclick="scrollToImageSection()">Here is the new collection</p>
+      
+      
+      
+    </div>
+  </section>
+
+  <section id="featured-products">
+    <!-- Featured products section content -->
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div class="product">
+        <div class="product-item">
+          <img src="image.jpg.jpg" alt="Product Image">
+          <h3>Boys T-shirt</h3>
+          <p class="price">$6.06</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+  
+        <div class="product-item">
+          <img src="hoodie.jfif" alt="Product Image">
+          <h3>Boys Hoodie</h3>
+          <p class="price">$6.00</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+  
+        <div class="product-item">
+          <img src="alig..jfif" alt="Product Image">
+          <h3>Boys Hoodie</h3>
+          <p class="price">$8.00</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="button-container">
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+      
+  </section>
+  
+  <div id="about-details">
+    <!-- About details content -->
+  </div>
+
+  <div id="contact-details">
+    <!-- Contact details content -->
+  </div>
+
+  <section id="signup">
+    <h2>Sign Up</h2>
+    <form action="process_signup.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Add more fields as needed -->
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+  <div id="about-details"></div>
+  <div id="contact-details"></div>
+
+
+  <footer>
+    <!-- Footer content -->
+    <div class="container">
+      <p>&copy; 2023 Your Clothing Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript code
+
+    // Function to display contact details
+    function displayContactDetails() {
+      // Replace the placeholders with your actual contact details
+      const contactDetails = `
+        <h2>Contact Details</h2>
+        <p>Email: maadfaisal04@gmail.com</p>
+        <p>Phone: 6299572199</p>
+        <p>Address: aligarh muslim university,sir shah sulemaan hall</p>
+      `;
+
+      // Select the element where the contact details will be displayed
+      const contactContainer = document.getElementById('contact-details');
+
+      // Set the HTML content of the element to the contact details
+      contactContainer.innerHTML = contactDetails;
+    }
+    // Function to display about details
+    function displayAboutDetails() {
+      // Replace the placeholder with your own about details
+      const aboutDetails = `
+        <h2>About Us</h2>
+        <p>Welcome to our clothing store! We are dedicated to providing high-quality and stylish clothing for all fashion enthusiasts.</p>
+        <p>Feel free to explore our collection and find the perfect outfits for any occasion.</p>
+      `;
+
+      // Select the element where the about details will be displayed
+      const aboutContainer = document.getElementById('about-details');
+
+      // Set the HTML content of the element to the about details
+      aboutContainer.innerHTML = aboutDetails;
+    }
+    // JavaScript code for your e-commerce website
+
+// Function to display contact details
+function displayContactDetails() {
+  // Replace the placeholders with your actual contact details
+  const contactDetails = `
+    <h2>Contact Details</h2>
+    <p>Email: maadfaisal04@gmail.com</p>
+    <p>Phone: 6299572199</p>
+    <p>Address: Aligarh Muslim University, Sir Shah Sulemaan Hall</p>
+  `;
+
+  // Select the element where the contact details will be displayed
+  const contactContainer = document.getElementById('contact-details');
+
+  // Set the HTML content of the element to the contact details
+  contactContainer.innerHTML = contactDetails;
+}
+
+// Function to scroll to the signup section
+function scrollToSignupSection() {
+  const signupSection = document.getElementById('signup');
+  signupSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+  </script>
+
+  <?php
+  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Get the submitted form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+
+    // Validate and process the data as needed
+
+    // Save the signup details in a file
+    $file = fopen('signup_details.txt', 'a'); // Open the file in append mode
+    fwrite($file, "Name: $name\nEmail: $email\n\n");
+    fclose($file);
+
+    // Redirect the user to a thank you page
+    header('Location: thank_you.html');
+    exit;
+  }
+  ?>
+</body>
+</html>

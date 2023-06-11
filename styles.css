@@ -1,0 +1,223 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url('jpg.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  
+  
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  #hero {
+    background: url(productholder.jpg ) center/cover no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #555;
+  }
+  
+  #featured-products {
+    padding: 40px 0;
+  }
+  
+  .product {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .price {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+   /* CSS styles for the hero section */
+
+
+   
+
+/* CSS styles for the hero section */
+
+.product {
+    display: flex;
+  }
+  
+  .product-item {
+    flex: 1;
+    margin: 0 10px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  header {
+    height: 10vh;
+  }
+  
+  footer {
+    height: 10vh;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    header, footer {
+      height: 8vh;
+      font-size: 12px;
+    }
+  
+    .content {
+      padding: 10px;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    header, footer {
+      height: 12vh;
+      font-size: 14px;
+    }
+  
+    .content {
+      padding: 15px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    header, footer {
+      height: 15vh;
+      font-size: 16px;
+    }
+  
+    .content {
+      padding: 20px;
+    }
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('jpg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Rest of your CSS code... */
+  
+  @media (max-width: 600px) {
+    body {
+      background-size: contain;
+    }
+  }
+  
