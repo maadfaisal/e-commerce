@@ -222,9 +222,9 @@
   }
 
   #social-media, #categories {
-    background-color: #d8c4c4;
-    padding: 20px;
-    margin-top: 20px;
+    
+    padding: 14px;
+    margin-top: 18px;
   }
   
   #social-media h2, #categories h2 {
