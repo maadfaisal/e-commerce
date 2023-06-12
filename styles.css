@@ -76,11 +76,13 @@
   
   #featured-products {
     padding: 40px 0;
+      color:rgb(222, 215, 206);
   }
   
   .product {
     text-align: center;
     margin-bottom: 30px;
+      color:rgb(222, 215, 206);
   }
   
   .product img {
@@ -97,8 +99,9 @@
   
   .price {
     font-size: 18px;
-    color: #777;
+    color:  #cabfbf;
     margin-bottom: 10px;
+      
   }
   
   footer {
