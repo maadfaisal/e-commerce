@@ -6,7 +6,7 @@
   }
   
   body {
-    background-image: url('jpg.jpeg');
+    background-image: url('ashish-kumar-senapati-wbS3ac5c88Q-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -230,10 +230,12 @@
   #social-media h2, #categories h2 {
     font-size: 24px;
     margin-bottom: 10px;
+       color:#fff;
   }
   
   .social-media-links li, .category-list li {
     list-style: none;
+       color:rgb(238, 211, 211);
   }
   
   .social-media-links li a, .category-list li {
